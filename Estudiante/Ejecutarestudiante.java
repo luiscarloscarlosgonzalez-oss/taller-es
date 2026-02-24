@@ -1,5 +1,3 @@
-package Estudiante;
-
 public class Ejecutarestudiante {
     public static void main(String[] args) {
         // Arreglo de objetos 
@@ -35,13 +33,19 @@ public class Ejecutarestudiante {
         
  
            //Promedio de estudiantes que estan en 3r semestre
-        int Semestre = 0;
+        double sumaNotasSemestre = 0.0;
+        int contadorSemestre = 0;
         for (int i = 0; i < est.length; i++) {
             if (est[i].getSemestre() == 3) {
-                Semestre += est[i].getNotapromedio();        
+                sumaNotasSemestre += est[i].getNotapromedio();
+                contadorSemestre++;
             }
         }
-        System.out.println(Semestre / 1);
+        if (contadorSemestre > 0) {
+            System.out.println("Promedio de notas para el semestre 3: " + (sumaNotasSemestre / contadorSemestre));
+        } else {
+            System.out.println("No hay estudiantes en el semestre 3");
+        }
        
 
     }    
