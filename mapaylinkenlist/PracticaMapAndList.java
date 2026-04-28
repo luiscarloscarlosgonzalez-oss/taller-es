@@ -40,7 +40,25 @@ public class PracticaMapAndList {
         productos.forEach((key, value) -> {
             System.out.println("Código: [" + key + "] -> Producto: [" + value + "]");
         });
- 
+       
+
+     //------------------------------------------------------------------------------
+     
+       LinkedList<String> anaLista = new LinkedList<>();
+       
+        anaLista.add("Camisa");
+        anaLista.add("Pantalon");
+     
+         LinkedList<String> luisLista = new LinkedList<>();
+       
+        luisLista.add("zapatos");
+        
+        imprimirCantidadProductosAna(anaLista);
+
+    }
+
+    public static void imprimirCantidadProductosAna(LinkedList<String> anaLista) {
+        System.out.println("Ana tiene " + anaLista.size() + " productos.");
     }
 }
  
