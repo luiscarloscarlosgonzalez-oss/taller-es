@@ -1,13 +1,15 @@
+package Estudiante;
+
 public class Ejecutarestudiante {
     public static void main(String[] args) {
         // Arreglo de objetos 
-        Estudiante objE = new Estudiante();
-        Estudiante[] est = new Estudiante[4];
+        Estudiante1 objE = new Estudiante1();
+        Estudiante1[] est = new Estudiante1[4];
 
-        est[0] = new Estudiante("Ana", 2, "Ingeniería de sistemas ", 4.5, 20);
-        est[1] = new Estudiante("Carlos", 3, "Ingeniería de sistemas ", 4.2, 21);
-        est[2] = new Estudiante("Luisa", 1, "Ingeniería de sistemas ", 4.7, 19);
-        est[3] = new Estudiante("Miguel", 4, "Ingeniería de sistemas ", 4.0, 22);
+        est[0] = new Estudiante1("Ana", 2, "Ingeniería de sistemas ", 4.5, 20);
+        est[1] = new Estudiante1("Carlos", 3, "Ingeniería de sistemas ", 4.2, 21);
+        est[2] = new Estudiante1("Luisa", 1, "Ingeniería de sistemas ", 4.7, 19);
+        est[3] = new Estudiante1("Miguel", 4, "Ingeniería de sistemas ", 4.0, 22);
 
        
      for (int i = 0; i < est.length; i++) {
