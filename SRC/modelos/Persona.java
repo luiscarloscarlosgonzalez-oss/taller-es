@@ -12,7 +12,7 @@ public abstract class Persona {
         this.email = email;
     }
 
-    public abstract void MostraInformacion (); 
+    public abstract void mostrarInformacion();
         
    public String getNombre() {
         return nombre;

@@ -1,5 +1,8 @@
 package SRC.estructuras.excepciones;
 
-public class EstudianteNoEncontradoException {
+public class EstudianteNoEncontradoException extends Exception {
     
+    public EstudianteNoEncontradoException(String mensaje) {
+        super(mensaje);
+    }
 }
